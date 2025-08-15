@@ -17,13 +17,13 @@
 
             <flux:navlist variant="outline">
                 <flux:navlist.group :heading="__('Admin menu')" class="grid">
-                    <flux:navlist.item icon="home" :href="route('admin.departement')"
+                    <flux:navlist.item icon="building-office-2" :href="route('admin.departement')"
                         :current="request()->routeIs('admin.departement')" wire:navigate>{{ __('Departement') }}
                     </flux:navlist.item>
-                    <flux:navlist.item icon="home" :href="route('admin.transaction')"
+                    <flux:navlist.item icon="credit-card" :href="route('admin.transaction')"
                         :current="request()->routeIs('admin.transaction')" wire:navigate>{{ __('Transaction') }}
                     </flux:navlist.item>
-                    <flux:navlist.item icon="home" :href="route('admin.users')"
+                    <flux:navlist.item icon="users" :href="route('admin.users')"
                         :current="request()->routeIs('admin.users')" wire:navigate>
                         {{ __('Manage Users') }}
                     </flux:navlist.item>
@@ -40,7 +40,7 @@
                     <flux:navlist.item icon="home" :href="route('student.dashboard')"
                         :current="request()->routeIs('student.dashboard')" wire:navigate>{{ __('Dashboard') }}
                     </flux:navlist.item>
-                    <flux:navlist.item icon="home" :href="route('student.biodata')"
+                    <flux:navlist.item icon="user" :href="route('student.biodata')"
                         :current="request()->routeIs('student.biodata')" wire:navigate>{{ __('Biodata') }}
                     </flux:navlist.item>
                 </flux:navlist.group>
